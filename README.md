@@ -1,1 +1,1 @@
-Simple REST API demo for my [Web Information Organization] course.
+Simple REST API demo for my [Web Information Organization](http://aeshin.org/teaching/inls-490-186/2012/sp/) course.
