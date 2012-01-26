@@ -25,7 +25,11 @@ class Buckets
 
   index: (req, res) =>
     res.contentType "txt"
-    res.send "Buckets: " + (name for name,data of @store) + "\n"
+    names = (name for name,data of @store)
+    if names.length > 0
+      res.send "Buckets: " + names + "\n"
+    else
+      res.send "No buckets have been created.\n"
 
   create: (req, res) =>
     unless @names.length > 0
